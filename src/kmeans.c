@@ -116,7 +116,7 @@ void kmeans(const double *X, int *y, const int *sn, const int n, const int m, co
 		memset(nums, 0, k * sizeof(int));
 		flag = checkSplitting(x, c, y, nums, n, m, k);
 		i++;
-	} while ((flag) || (i < 2));
+	} while (flag);
 	free(x);
 	free(c);
 	free(nums);
